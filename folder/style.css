@@ -1,11 +1,15 @@
 .asidebtns:hover a i{
-    font-size: 22px;
+    font-size: 21px;
  }
  
  .asidebtns:hover a img{
-     width: 25px;
+     width: 24.5px;
  }
 
 .moretoggles{
     display: none;
+}
+
+.postaespa{
+    display: block;
 }
