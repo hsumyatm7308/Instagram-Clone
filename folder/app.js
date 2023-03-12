@@ -2,7 +2,8 @@
 const getmoresettings = document.getElementById('moresettings');
 const getmorebtns = document.getElementById('morebtns');
 
-const socialface = document.getElementById('socialface')
+const socialface = document.getElementById('socialface');
+const accountprofile = document.getElementById('accountprofile');
 
 getmorebtns.addEventListener("click",function(){
    getmoresettings.classList.toggle('moretoggles');
@@ -13,6 +14,10 @@ getmorebtns.addEventListener("click",function(){
 socialface.addEventListener('click',function(){
    getmoresettings.classList.add('moretoggles');
 
+})
+
+accountprofile.addEventListener("click",function(){
+   getmoresettings.classList.add('moretoggles');
 })
 
 
@@ -135,3 +140,8 @@ heart.addEventListener("click",function(){
 savedmark.addEventListener("click",function(){
       bookmark.classList.toggle('fa-solid');
 })
+
+
+const autoyear = document.getElementById("autoyear")
+const getyear = new Date().getUTCFullYear()
+autoyear.textContent = getyear;
