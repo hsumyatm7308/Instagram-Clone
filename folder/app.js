@@ -1,3 +1,4 @@
+
 const getmoresettings = document.getElementById('moresettings');
 const getmorebtns = document.getElementById('morebtns');
 
