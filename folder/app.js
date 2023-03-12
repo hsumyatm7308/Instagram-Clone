@@ -43,6 +43,10 @@ function socialpostright() {
       getpostimg[x].classList.remove('postaespa');
 
     }
+
+    if(curimg >= 1){
+      leftarrow.style.display = 'block';
+    }
    }
 }
 
@@ -58,6 +62,11 @@ function socialpostleft(){
 
       }else{
          getpostimg[x].classList.remove('postaespa')
+      }
+
+
+      if(curimg < 1){
+         leftarrow.style.display = "none";
       }
    }
 }
