@@ -2,9 +2,19 @@
 const getmoresettings = document.getElementById('moresettings');
 const getmorebtns = document.getElementById('morebtns');
 
+const socialface = document.getElementById('socialface')
+
 getmorebtns.addEventListener("click",function(){
    getmoresettings.classList.toggle('moretoggles');
+
+   
 });
+
+socialface.addEventListener('click',function(){
+   getmoresettings.classList.add('moretoggles');
+
+})
+
 
 
 
@@ -105,13 +115,19 @@ function dotsfun(){
 }
 
 
-const heart = document.querySelector('.heartnoti')
+const heart = document.querySelector('.heartnoti');
+const redheart = document.querySelector('.redheart');
+const blankheart = document.getElementById('blankheart')
 
 for(var x = 0; x < getpostimg.length; x++){
    getpostimg[x].addEventListener("dblclick",function(){
-      // heart.style. = "red";
-      heart.innerHTML = `<i class="fa-solid fa-heart text-red-500 mr-2"></i>`
+      blankheart.classList.toggle('fa-solid');
+      blankheart.classList.toggle('text-red-500')
    });
 }
 
+heart.addEventListener("click",function(){      
+      blankheart.classList.toggle('fa-solid');
+      blankheart.classList.toggle('text-red-500')   
+})
 
