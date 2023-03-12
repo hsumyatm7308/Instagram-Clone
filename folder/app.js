@@ -15,12 +15,17 @@ const leftarrow = document.querySelector('.fa-circle-chevron-left');
 let curimg = 0;
 
 leftarrow.addEventListener("click",function(){
-  
+  curimg--;
+  if(curimg < 0){
+   curimg = 0;
+  }
+  socialpostleft();
 })
 
 rightarrow.addEventListener("click",function(){
 
-   curimg++
+   curimg++;
+
    if(curimg > getpostimg.length-1){
       curimg = getpostimg.length-1;
    }
@@ -32,7 +37,7 @@ function socialpostright() {
    for(var x = 0; x< getpostimg.length; x++){
     if(x === curimg){
       getpostimg[x].classList.add('postaespa');
-      getpostimg[curimg-1].classList.replace('translate-x-full','-translate-x-full');
+      getpostimg[curimg-1].classList.replace('left-full','-left-full');
       getpostimg[curimg-1].style.transition = "all 1s"
     }else{
       getpostimg[x].classList.remove('postaespa');
@@ -42,10 +47,17 @@ function socialpostright() {
 }
 
 
+
 function socialpostleft(){
    for(var x = 0; x < getpostimg.length; x++){
       if(x === curimg){
-         
+      getpostimg[x].classList.add('postaespa');
+      getpostimg[curimg+1].classList.replace('-left-full','left-full');
+      getpostimg[curimg+1].style.transition = "all 1s"
+
+
+      }else{
+         getpostimg[x].classList.remove('postaespa')
       }
    }
 }
