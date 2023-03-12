@@ -11,6 +11,12 @@
 }
 
 .postaespa{
-    display: block;
+    transition: transform 1s;
+    transform: translate(0%);
+}
+
+.curimgminusone{
+    transition: all .5s;
+    transform: translate((-50%));
 }
 
