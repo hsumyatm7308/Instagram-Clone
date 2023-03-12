@@ -116,8 +116,9 @@ function dotsfun(){
 
 
 const heart = document.querySelector('.heartnoti');
-const redheart = document.querySelector('.redheart');
 const blankheart = document.getElementById('blankheart')
+const savedmark = document.querySelector('.savedmark');
+const bookmark = document.getElementById('bookmark')
 
 for(var x = 0; x < getpostimg.length; x++){
    getpostimg[x].addEventListener("dblclick",function(){
@@ -131,3 +132,6 @@ heart.addEventListener("click",function(){
       blankheart.classList.toggle('text-red-500')   
 })
 
+savedmark.addEventListener("click",function(){
+      bookmark.classList.toggle('fa-solid');
+})
