@@ -5,3 +5,7 @@
  .asidebtns:hover a img{
      width: 25px;
  }
+
+.moretoggles{
+    display: none;
+}
