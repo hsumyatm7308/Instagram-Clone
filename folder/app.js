@@ -80,7 +80,6 @@ function socialpostright() {
 }
 
 
-
 function socialpostleft(){
    for(var x = 0; x < getpostimg.length; x++){
       if(x === curimg){
@@ -108,6 +107,15 @@ function socialpostleft(){
 }
 
 
+
+
+
+
+
+
+
+
+
 function dotsfun(){
    for(var x = 0; x < getdots.length; x++){
       if(x === actcolor){
@@ -118,6 +126,14 @@ function dotsfun(){
    }
 
 }
+
+
+
+
+
+
+
+
 
 
 const heart = document.querySelector('.heartnoti');
@@ -140,6 +156,32 @@ heart.addEventListener("click",function(){
 savedmark.addEventListener("click",function(){
       bookmark.classList.toggle('fa-solid');
 })
+
+
+const getcomment = document.getElementById('comment');
+const commentsubmit = document.querySelector('.commentsubmit');
+
+getcomment.addEventListener('keydown',function(){
+   
+      //  console.log(getcomment.value.length-1)
+
+       if(getcomment.value.length-1  === 1){
+         commentsubmit.style.display = "block";
+      
+      }else if(getcomment.value.length-1 < 1){
+       commentsubmit.style.display = "none";
+
+      }
+      
+});
+
+
+
+
+
+
+
+
 
 
 const autoyear = document.getElementById("autoyear")
