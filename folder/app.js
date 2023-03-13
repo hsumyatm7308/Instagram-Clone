@@ -120,23 +120,52 @@ function dotsfun(){
 
 
 
-const postacc = document.querySelector('.postacc');
-const hoveracc = document.querySelector('.hoveracc');
+const postacc = document.querySelectorAll('.postacc');
+const hoveracc = document.querySelectorAll('.hoveracc');
 
-postacc.addEventListener('mousemove',function(){
-   // console.log('hello');
-   hoveracc.classList.replace('hidden','block');
-   hoveracc.style.transition = "all 1s";
+postacc.forEach(function(postac,postidx){
+
+    postac.addEventListener('mouseover',function(){
+      
+         for(var x = 0; x < hoveracc.length; x++){
+            if(postidx === x){
+              hoveracc[x].classList.add('showacc')
+
+            }else{
+              hoveracc[x].classList.remove('showacc')
+
+            }
+         }
+      
+    })
+
+
+    postac.addEventListener('mouseleave',function(){
+      
+      for(var x = 0; x < hoveracc.length; x++){
+         if(postidx === x){
+           hoveracc[x].classList.remove('showacc')
+
+         }
+      }
+   
+ })
+
+
 
 })
 
 
-postacc.addEventListener('mouseleave',function(){
-   // console.log('hi')
-   hoveracc.classList.replace('block','hidden');
-   hoveracc.style.transition = "all 1s";
 
-})
+
+   
+
+
+
+
+
+
+
 
 
 

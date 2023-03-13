@@ -28,9 +28,7 @@
     background-color: #ffff;
 }
 
-.postacc:hover + .hoveracc{
-    display: hidden;
+.showacc{
+    display: block;
 }
-
-
 
