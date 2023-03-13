@@ -9,71 +9,68 @@
     </head>
     <body>
         
-        <aside class="w-64 h-screen  border-r-2 fixed">
+        <aside class="lg:w-64 lg:h-screen md:w-16  border-r-2 fixed">
             <div class=" ">
-                <img  src="./assets/img/instagram-new-logo.png" class="w-32 ml-5 mt-8 cursor-pointer" alt="">
+                <img  src="./assets/img/instagram-new-logo.png" class="md:w-0 w-32 ml-5 mt-8 cursor-pointer" alt="">
+                <span><i class="fa-brands fa-instagram text-2xl"></i></span>
 
 
                 <div class=" text-center mt-5">
                     <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class="font-bold ">
-                            <i class="fa-solid fa-house text-xl mr-2"></i> Home
+                            <i class="fa-solid fa-house text-xl mr-2"></i> <span class="md:hidden lg:block">Home</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class="">
-                            <i class="fa-solid fa-magnifying-glass text-2xl mr-2"></i> Search
+                            <i class="fa-solid fa-magnifying-glass text-2xl mr-2"></i> <span class="md:hidden">Search</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class="">
-                            <i class="fa-regular fa-compass text-2xl mr-2"></i> Explore
+                            <i class="fa-regular fa-compass text-2xl mr-2"></i>  <span class="md:hidden">Explore</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class="">
-                            <img src="./assets/img/reel.png" class="w-6 inline mr-2" alt="" > Reels
+                            <img src="./assets/img/reel.png" class="w-6 inline mr-2" alt="" >  <span class="md:hidden">Reels</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class=" ">
-                            <img src="./assets/img/messenger.png" class="w-6 inline mr-2" alt=""> Messages
+                            <img src="./assets/img/messenger.png" class="w-6 inline mr-2" alt="">  <span class="md:hidden">Messages</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class=" ">
-                            <i class="fa-regular fa-heart text-2xl mr-2"></i> Notifications
+                            <i class="fa-regular fa-heart text-2xl mr-2"></i>  <span class="md:hidden">Notifications</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class=" ">
-                            <i class="fa-regular fa-square-plus text-2xl mr-2"></i> Create
+                            <i class="fa-regular fa-square-plus text-2xl mr-2"></i>  <span class="md:hidden">Create</span>
                         </a>
                       </button>
 
                       <button class="w-56 h-22 bg-light  text-start p-3 mb-1 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class=" ">
-                            <img src="./assets/img/profile.jpg" class="w-6 rounded-full inline mr-2" alt=""> Profile
+                            <img src="./assets/img/profile.jpg" class="w-6 rounded-full inline mr-2" alt="">  <span class="md:hidden">Profile</span>
                         </a>
                       </button>
 
 
                       <button id="morebtns" class="w-56 h-22 bg-light  text-start p-3 mt-28  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
                         <a href="javascript:void(0);" class="flex items-center">
-                            <i class="fa-solid fa-bars text-2xl mr-3"></i> More
+                            <i class="fa-solid fa-bars text-2xl mr-3"></i>  <span class="md:hidden">More</span>
                         </a>
                       </button>
 
-
-                     
-
-    
                 </div>
 
 
@@ -82,81 +79,61 @@
             </div>
         </aside>
 
-        <div id="moresettings"   class="w-64  bg-gray-100 rounded-2xl  border border-gray shadow-md mt-9 absolute left-4 top-80 z-10  moretoggles">
-            <div class=" bg-white border-b-2  p-2  transition-all duration-200  hover:bg-gray-50">
-                <button class="">
+        <div id="moresettings"   class="w-64  bg-white rounded-2xl  border border-gray shadow-md mt-9 absolute left-4 top-80 z-10  moretoggles">
+            <div class="border-b-2  p-2  transition-all duration-200  hover:bg-gray-50">
                     <a href="javascript:void(0);" class="flex items-center  ml-4">
                         Settings
                         <i class="fa-solid fa-gear text-xl ml-28"></i> 
-                    </a>
-                </button>
-    
+                    </a>    
             </div>
 
-            <div class=" bg-white border-b-2 p-2 transition-all duration-200  hover:bg-gray-50">
-            
-                <button class=" ">
+            <div class="border-b-2 p-2 transition-all duration-200  hover:bg-gray-50">
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Your activity
                         <i class="fa-solid fa-clock-rotate-left text-xl ml-20"></i> 
                     </a>
-                </button>
             </div>
     
     
-            <div class="  bg-white border-b p-2 transition-all duration-200  hover:bg-gray-50">
+            <div class=" border-b p-2 transition-all duration-200  hover:bg-gray-50">
             
-                <button class=" ">
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Saved
                         <i class="fa-regular fa-bookmark text-xl ml-32"></i>
                     </a>
-                </button>
     
             </div>
     
     
     
-            <div class="  bg-white border-b p-2 transition-all duration-200  hover:bg-gray-50">
-            
-                <button class=" ">
+            <div class="border-b p-2 transition-all duration-200  hover:bg-gray-50">            
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Switch appearance
                         <i class="fa-regular fa-moon text-2xl ml-9"></i>
                     </a>
-                </button>
             </div>
     
     
-            <div class="  bg-white  border-b p-2 transition-all duration-200  hover:bg-gray-50">
-            
-                <button class="">
+            <div class="border-b p-2 transition-all duration-200  hover:bg-gray-50">            
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Report a problem
                         <i class="fa-solid fa-house-circle-exclamation text-xl ml-10"></i> 
                     </a>
-                </button>
             </div>
     
     
     
-            <div class="  bg-white  border-t border-b p-2 mt-1 transition-all duration-200  hover:bg-gray-50">
-    
-                <button class="">
+            <div class="border-t border-b p-2 mt-1 transition-all duration-200  hover:bg-gray-50">
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Switch acoounts
                     </a>
-                </button>
             </div>
     
     
-            <div class="bg-white   p-2 transition-all duration-200  hover:bg-gray-50">
-    
-                <button class=" ">
+            <div class="p-2 transition-all duration-200  hover:bg-gray-50">    
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Log out
                     </a>
-                </button>
             </div>
         </div>
       
@@ -211,10 +188,10 @@
                          <span class="text-sm hover:text-zinc-400 postacc">aespa_official</span> 
                          <i class="fa-solid fa-circle-check text-blue-500 text-xs mr-4"></i>
  
-                         <i class="fa-solid fa-ellipsis text-xl ml-64  "></i>
+                         <i class="fa-solid fa-ellipsis text-xl ml-64  hover:text-zinc-400 ellipsisbtn"></i>
                      </div>
 
-                                        <!-- Hover  -->
+                <!-- Hover  -->
                 <div  class="w-96 h-96  bg-white border-2 rounded-lg shadow-lg hidden transition-all duration-100 absolute left-12 bottom-20 z-10 hoveracc">
                     <div class="w-full ml-3 mt-5 flex items-center">
                      <div class="w-16 h-16 bg-gray-100 bg-gradient-to-l from-red-600 via-purple-600 via-red-600 to-yellow-600 rounded-full mr-3 flex justify-center items-center">
@@ -335,12 +312,12 @@
                         <span class="text-sm hover:text-zinc-400 postacc">lalalalisa_m</span> 
                         <i class="fa-solid fa-circle-check text-blue-500 text-xs mr-4"></i>
 
-                        <i class="fa-solid fa-ellipsis text-xl ml-64  "></i>
+                        <i class="fa-solid fa-ellipsis text-xl ml-64  hover:text-zinc-400 ellipsisbtn"></i>
                     </div>
 
 
 
-                          <!-- Hover  -->
+                <!-- Hover  -->
                 <div  class="w-96 h-96  bg-white border-2 rounded-lg shadow-lg hidden transition-all duration-100 absolute left-12 -top-96 z-10 hoveracc">
                     <div class="w-full ml-3 mt-5 flex items-center">
                      <div class="w-16 h-16 bg-gray-100 bg-gradient-to-l from-red-600 via-purple-600 via-red-600 to-yellow-600 rounded-full mr-3 flex justify-center items-center">
@@ -350,7 +327,7 @@
                      <div>
                          <span class="text-md font-bold">lalalalisa_m</span> 
                          <i class="fa-solid fa-circle-check text-blue-500 text-sm mr-4"></i>
-                         <div class="text-zinc-400">aespa 에스파 </div>
+                         <div class="text-zinc-400">LISA </div>
                       
                      </div>
                     </div>
@@ -521,6 +498,78 @@
                   
             </div>
         </section>
+
+
+
+        <section id="modal" class="w-full h-screen invisible fixed  top-0 z-20 modals" >
+          <div class="modialdialog w-full h-screen flex justify-center items-center  ">
+            <div  class="w-96  bg-gray-100 rounded-2xl  border border-gray shadow-md ">
+                <div class=" border-b-2  p-3 rounded-tl-2xl rounded-tr-2xl  flex flex-col items-center hover:bg-gray-50">
+                        <a href="javascript:void(0);" class="flex items-center text-red-600  font-bold">
+                            Report
+                        </a>
+        
+                </div>
+    
+                <div class=" border-b-2 p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center text-red-600 font-bold">
+                        Unfollow
+                    </a>
+                </div>
+        
+        
+                <div class="   border-b p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Add to favorites
+                    </a>
+                </div>
+        
+        
+        
+                <div class="  border-b p-3 flex flex-col items-center  hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Go to post
+                    </a>
+                </div>
+        
+        
+                <div class=" border-b p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Share to...
+                    </a>
+                </div>
+
+                <div class=" border-b p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Copy link
+                    </a>
+               </div>
+
+               <div class=" border-b p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Embed
+                     </a>
+                </div>
+
+                <div class=" border-b p-3 flex flex-col items-center hover:bg-gray-50 ">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        About this acc
+                     </a>
+                </div>
+
+
+                <div class=" p-3 rounded-bl-2xl rounded-br-2xl  flex flex-col items-center hover:bg-zinc-200  cancelbtn">
+                    <a href="javascript:void(0);" class="flex items-center">
+                        Cancel
+                     </a>
+                </div>
+
+
+        
+       
+           </div>
+          </div>
+        </section> 
 
 
         <script src="./app.js"></script>

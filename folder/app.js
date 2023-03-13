@@ -148,29 +148,9 @@ postacc.forEach(function(postac,postidx){
 
          }
       }
-   
  })
 
-
-
 })
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -214,14 +194,28 @@ getcomment.addEventListener('keydown',function(){
 });
 
 
-
-
-
-
-
-
-
-
 const autoyear = document.getElementById("autoyear")
 const getyear = new Date().getUTCFullYear()
 autoyear.textContent = getyear;
+
+
+// Start Modal 
+const ellipsisbtn = document.querySelectorAll('.ellipsisbtn');
+const modal = document.getElementById('modal')
+const cancelitem = document.querySelector('.cancelbtn');
+const modialcontainer = document.querySelector('.modialdialog');
+
+ellipsisbtn.forEach(function(ellip,idx){
+   ellip.addEventListener('click',function(){
+      modal.style.visibility = "visible"
+   })
+
+   cancelitem.addEventListener('mousedown',function(){
+      modal.style.visibility = "hidden";
+   })
+})
+
+modialcontainer.addEventListener('click',function(){
+   modal.style.visibility = "hidden";
+})
+
