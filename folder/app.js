@@ -224,6 +224,7 @@ modialcontainer.addEventListener('click',function(){
 
 
 const darkmoodtog = document.querySelector('.darkmoodtog');
+const htmldocument = document.querySelector('html')
 darkmoodtog.addEventListener("click",function(){
-   console.log('hi')
+   htmldocument.classList.toggle('dark')
 })
