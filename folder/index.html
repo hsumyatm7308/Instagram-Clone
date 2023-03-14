@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
     <head>
         <title>Instagram</title>
         <!-- fontawesome  -->
@@ -7,66 +7,70 @@
         <link rel="stylesheet" href="./tailwind.css">
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body class="relative">
+    <body class="relative bg-white dark:bg-black">
         
         <aside class="sm:hidden  md:w-20 md:block lg:w-64 md:overflow-x-hidden lg:h-screen lg:block border-r-2 fixed">
             <div class="">
-                <img  src="./assets/img/instagramlogobgrm.png" class="sm:w-0 md:w-0 lg:w-32 ml-5 mt-8 cursor-pointer" alt="">
-                <span class="sm:hidden md:block lg:hidden"><i class="fa-brands fa-instagram text-2xl ml-5"></i></span>
+                <img  src="./assets/img/instagramlogobgrm.png" class="sm:w-0 md:w-0 lg:w-32 ml-5 mt-8 cursor-pointer dark:hidden" alt="">
+                <img  src="./assets/img/instagramlogowhite.png" class="sm:w-0 md:w-0 lg:w-32 ml-5 mt-8 cursor-pointer dark:block hidden" alt="">
+
+                <span class="sm:hidden md:block lg:hidden dark:text-white"><i class="fa-brands fa-instagram text-2xl ml-5"></i></span>
 
 
-                <div class="sm:hidden md:grid md:mt-7 lg:grid text-center mt-5">
-                    <button class=" md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class="font-bold ">
-                            <i class="fa-solid fa-house text-xl md:ml-2 lg:mr-2"></i> <span class="md:invisible lg:visible">Home</span>
+                <div class="sm:hidden md:grid md:flex md:flex-col md:items-center  md:mt-7 lg:grid text-center mt-5">
+                    <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl   dark:hover:bg-zinc-800 asidebtns ">
+                        <a href="javascript:void(0);" class="font-bold dark:text-white dark:-ml-2">
+                            <i class="fa-solid fa-house text-xl md:ml-2 lg:mr-2 "></i> <span class="md:invisible lg:visible">Home</span>
                         </a>
                       </button>
 
-                      <button class="sm:hidden md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full md:block lg:w-56 lg:h-22 lg:mb-2 lg:block bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class="">
+                      <button class="sm:hidden md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full md:block lg:w-56 lg:h-22 lg:mb-2 lg:block bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class="dark:text-white dark:-ml-2">
                             <i class="fa-solid fa-magnifying-glass text-2xl md:ml-2 lg:mr-2"></i> <span class="md:invisible lg:visible">Search</span>
                         </a>
                       </button>
 
-                      <button class=" md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class="">
+                      <button class=" md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class="dark:text-white dark:-ml-2">
                             <i class="fa-regular fa-compass text-2xl md:ml-2 lg:mr-2"></i>  <span class="md:invisible lg:visible">Explore</span>
                         </a>
                       </button>
 
-                      <button class="md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class="">
-                            <img src="./assets/img/reel.png" class="w-6 inline md:ml-2 lg:mr-2" alt="" >  <span class="md:invisible lg:visible">Reels</span>
+                      <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class=" dark:text-white dark:-ml-2">
+                            <img src="./assets/img/reel.png" class="w-6 inline md:ml-2 lg:mr-2 inline dark:hidden" alt="" >  <span class="md:invisible lg:visible inline dark:hidden">Reels</span>
+                            <img src="./assets/img/reelwhitebgrm.png" class="w-6 inline md:ml-2 lg:mr-2  hidden  dark:inline" alt="" >  <span class="md:invisible lg:visible hidden dark:inline">Reels</span>
                         </a>
                       </button>
 
-                      <button class="md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class=" ">
-                            <img src="./assets/img/messenger.png" class="w-6 inline md:ml-2 lg:mr-2" alt="">  <span class="md:invisible lg:visible">Messages</span>
+                      <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class=" dark:text-white dark:-ml-2">
+                            <img src="./assets/img/messenger.png" class="w-6 inline md:ml-2 lg:mr-2 inline dark:hidden" alt="">  <span class="md:invisible lg:visible inline dark:hidden">Messages</span>
+                            <img src="./assets/img/messengerbgrm.png" class="w-6 inline md:ml-2 lg:mr-2 hidden  dark:inline" alt="">  <span class="md:invisible lg:visible hidden dark:inline">Messages</span>
                         </a>
                       </button>
 
-                      <button class="sm:hidden md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full md:block lg:w-56 lg:h-22 lg:mb-2 lg:block bg-light  text-start p-3  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class=" ">
+                      <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full md:block lg:w-56 lg:h-22 lg:mb-2 lg:block bg-light  text-start p-3  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class=" dark:text-white dark:-ml-2">
                             <i class="fa-regular fa-heart text-2xl md:ml-2 lg:mr-2"></i>  <span class="md:invisible lg:visible">Notifications</span>
                         </a>
                       </button>
 
-                      <button class="md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class=" ">
+                      <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class="dark:text-white dark:-ml-2 ">
                             <i class="fa-regular fa-square-plus text-2xl md:ml-2 lg:mr-2"></i>  <span class="md:invisible lg:visible">Create</span>
                         </a>
                       </button>
 
-                      <button class="md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class=" ">
+                      <button class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 lg:mb-2 bg-light  text-start p-3 transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class="dark:text-white dark:-ml-2">
                             <img src="./assets/img/profile.jpg" class="w-6 rounded-full inline md:ml-2 lg:mr-2" alt="">  <span class="md:invisible lg:visible">Profile</span>
                         </a>
                       </button>
 
 
-                      <button id="morebtns" class="md:w-16 md:h-12 md:mb-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22 bg-light  text-start p-3 mt-28  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl asidebtns">
-                        <a href="javascript:void(0);" class="flex items-center">
+                      <button id="morebtns" class="md:w-12 md:h-12 md:mb-2 md:ml-2 md:hover:bg-gray-50 hover:rounded-full lg:w-56 lg:h-22  bg-light  text-start p-3 mt-28  transition-all duration-200 hover:bg-gray-50  hover:rounded-3xl dark:hover:bg-zinc-800 asidebtns">
+                        <a href="javascript:void(0);" class="flex items-center dark:text-white dark:-ml-2">
                             <i class="fa-solid fa-bars text-2xl md:ml-2 lg:mr-3"></i>  <span class="md:invisible lg:visible">More</span>
                         </a>
                       </button>
@@ -82,9 +86,11 @@
 
 
          <!-- For SM  -->
-         <div class="sm:block md:hidden lg:hidden border-t-2">
-            <div class="w-full h-16 bg-gray-100 flex items-center relative">
-                 <img src="./assets/img/instagramlogobgrm.png" class="w-32 ml-2" alt="">
+         <div class="sm:block md:hidden lg:hidden border-t-2 dark:bg-zinc-800">
+            <div class="w-full h-16 bg-gray-100 flex items-center relative dark:bg-black">
+                 <img src="./assets/img/instagramlogobgrm.png" class="w-32 ml-2 dark:hidden" alt="">
+                 <img src="./assets/img/instagramwhitebgrm.png" class="w-32 ml-2 dark:block hidden" alt="">
+
 
                  <div class=" absolute right-12">
                     <input type="search" class="w-64  bg-stone-200 rounded-lg p-2" placeholder="        Search">
@@ -165,7 +171,7 @@
     
     
     
-            <div class="border-b p-2 transition-all duration-200  hover:bg-gray-50">            
+            <div class="border-b p-2 transition-all duration-200  hover:bg-gray-50 darkmoodtog">            
                     <a href="javascript:void(0);" class="flex items-center ml-4">
                         Switch appearance
                         <i class="fa-regular fa-moon text-2xl ml-9"></i>
@@ -400,7 +406,7 @@
                         <span class="text-sm hover:text-zinc-400 postacc">lalalalisa_m</span> 
                         <i class="fa-solid fa-circle-check text-blue-500 text-xs mr-4"></i>
 
-                        <i class="fa-solid fa-ellipsis text-xl ml-64  hover:text-zinc-400 ellipsisbtn"></i>
+                        <i class="fa-solid fa-ellipsis sm:absolute sm:right-1 text-xl ml-64  hover:text-zinc-400 ellipsisbtn"></i>
                     </div>
 
 

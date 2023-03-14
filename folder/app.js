@@ -219,3 +219,11 @@ modialcontainer.addEventListener('click',function(){
    modal.style.visibility = "hidden";
 })
 
+
+
+
+
+const darkmoodtog = document.querySelector('.darkmoodtog');
+darkmoodtog.addEventListener("click",function(){
+   console.log('hi')
+})
