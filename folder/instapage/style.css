@@ -1,0 +1,38 @@
+.asidebtns:hover a i{
+    font-size: 21px;
+ }
+ 
+ .asidebtns:hover a img{
+     width: 24.5px;
+ }
+
+.moretoggles{
+    display: none;
+}
+
+
+
+.postaespa{
+    transition: left 1s;
+    left: 0;
+}
+
+.curimgminusone{
+    transition: all .5s;
+    left: -30%;
+}
+
+
+
+.active-color{
+    background-color: #ffff;
+}
+
+.showacc{
+    display: block;
+}
+
+
+.modals{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+}
